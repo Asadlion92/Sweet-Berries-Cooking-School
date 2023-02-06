@@ -3,7 +3,7 @@
     padding: 0;
 
 }
-
+/* Great work on implementing the font family to the correct elements! */
 h1 {
     font-family: 'Roboto Serif', serif;
     font-size: 64px;
@@ -35,13 +35,19 @@ button {
 }
 
 body {
+    /* This margin is ruining the footer because now the footer has a margin of 20px on its bottom and a margin of 40px on it's sides.
+    A footer should not have any margin on its bottom or sides. */
     margin: 20px 40px;
     background-color: #F5F3EF;
 }
 
+/* Grid template areas haven’t been used to correctly display items at different positions in different viewports.
+This was one of the points in the rubric that hasn't been met. */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
+    /* You should change the 700px to another auto because in a real world scenario, you will get the cards data from a database or API and we won't know how many cards we will have.
+    So, giving it a fixed size will make our site break it's design */
     grid-template-rows: 50px auto 700px 70px;
     column-gap: 60px;
     row-gap: 60px;
@@ -232,6 +238,8 @@ nav {
 }
 
 @media (max-width: 390px) {
+    /* Great work on making the hamburger icon appear on mobile devices but it’s not a functional hamburger menu because when I click on it, the menu doesn't pop up. */
+
     .grid-container {
         grid-template-columns: 1fr;
         grid-template-rows: 50px auto auto 1850px 70px;
@@ -322,3 +330,5 @@ nav {
     }
 
 }
+
+/* Overall, beautiful work! You did an amazing job!👏 */
